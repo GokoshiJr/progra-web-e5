@@ -24,6 +24,18 @@
   grid-area: aside3;
 }
 
+.container .resultado1 {
+  grid-area: resultado1;
+}
+
+.container .resultado2 {
+  grid-area: resultado2;
+}
+
+.container .resultado3 {
+  grid-area: resultado3;
+}
+
 .container .footer {
   font-size: 50px;
   background-color: #118ab2;
@@ -49,11 +61,12 @@ p {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas:
     'header header'
-    'aside1 aside2'
-    'aside3 aside3'
+    'aside1 resultado1'
+    'aside2 resultado2'
+    'aside3 resultado3'
     'footer footer';
 }
 
@@ -89,4 +102,9 @@ p {
   .card-header {
     font-size: 24px;
   }
+}
+
+#ejercicio1 {
+  width: 60%;
+  margin: 10px auto;
 }

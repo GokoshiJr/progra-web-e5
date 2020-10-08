@@ -20,13 +20,16 @@
         include_once("php/aside1.php");
         include_once("php/aside2.php");
         include_once("php/aside3.php");
+        include_once("php/result1.php");
+        include_once("php/result2.php");
+        include_once("php/result3.php");
       ?>
       <footer class="footer">
         Ing en Computaci&oacute;n 2020-2CR
       </footer>      
     </div>    
-    <script  src="js/jquery-3.5.1.slim.min.js"></script>
-    <script  src="https://unpkg.com/@popperjs/core@2"></script>
-    <script  src="js/bootstrap.min.js"></script> 
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.min.js"></script> 
   </body>
 </html>
