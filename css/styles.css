@@ -72,6 +72,7 @@ p {
 
 @media screen and (max-width: 1200px) {
   .container {
+    font-family: Roboto, sans-serif;
     min-width: 400px; /* Ancho Minimo */
     width: 1080px; /* Ancho */
     margin: 10px auto; /* auto para centrar la pag*/
@@ -82,8 +83,11 @@ p {
     grid-template-areas:
       'header'
       'aside1'
+      'resultado1'
       'aside2'
+      'resultado2'
       'aside3'
+      'resultado3'
       'footer';
   }
 
