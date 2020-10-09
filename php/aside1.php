@@ -1,4 +1,4 @@
-<?php 
+<?php   
   $tituloPrincipal = "Ejercicio 1";
   $tituloSecundario = "N&uacute;mero Inverso";
   $parrafo = "Elabore un programa que solicite al usuario la introducci&oacute;n de un n&uacute;mero de tres d&iacute;gitos y que lo imprima en orden inverso.";  
@@ -8,14 +8,10 @@
     <h5 class="card-header"> <?php echo($tituloPrincipal) ?> </h5>
     <div class="card-body">
       <h5 class="card-title"> <?php echo($tituloSecundario) ?> </h5>
-      <p class="card-text"> <?php echo($parrafo) ?> </p>
-      <form action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-        <input type="hidden" name="limpiar" value="true">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
-          Mostrar
-        </button> 
-        <button type="submit" class="btn btn-primary" >Limpiar</button>
-      </form> 
+      <p class="card-text"> <?php echo($parrafo) ?> </p>      
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+        Mostrar
+      </button>      
       <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">

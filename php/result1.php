@@ -1,18 +1,12 @@
 <?php 
 
   $numero = $invertido = 0;
-  $error = "";  
-  $limpiar = FALSE;
+  $error = ""; 
 
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {  
-
+  if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     if (empty($_POST["result"])) {
-      $limpiar = $_POST["limpiar"];
-      if ($_POST["limpiar"] == "true") {
-        $numero = 0;
-        $invertido = 0;
-        $error = "Limpiado";
-      }
+      $error = "";
+      $numero = $invertido = 0;
     } else {
       $numero = $_POST["result"];    
       $invertido = invertir($numero);
@@ -27,6 +21,7 @@
   function invertir($num){    
     return strrev($num);
   }  
+
 ?>
 
 <aside class="resultado1 sombra">
